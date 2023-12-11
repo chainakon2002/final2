@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>API</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+        <link rel="stylesheet" href="style6.css">
+        <link rel="stylesheet" href="css/ma.css">
+        <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<!--
+
+TemplateMo 590 topic listing
+
+https://templatemo.com/tm-590-topic-listing
+
+-->
+    </head>
+    <style>
+        .centered1 {  
+ position: fixed;  
+ top: 50%;  
+ left: 50%;  
+ transform: translate(-50%, -50%); 
+
+ 
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{font-family: 'Kanit', sans-serif;}
+    </style>
+    
+    <body class="topics-listing-page" id="top">
+        <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+            <div class="container">
+                <a class="logo" href="index.html">FILM.</a>
+                <ul class="nav">
+                    <li class="item">
+                        <a class="link" href="index.html">Home</a>
+                    </li>
+                    
+                    <li class="item">
+                        <a class="link" href="java.html">Javascript</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="java - Copy.html">API</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="java.html">Json</a>
+                    </li>
+                    
+                </ul>
+                <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </a>
+            </div>
+        </nav><!-- End of Page Navbar -->
+
+
+
+        <main>
+
+            
+
+
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-5 col-12">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">API</li>
+                                </ol>
+                            </nav>
+
+                            <h2 class="text-white">API</h2>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h3 class="mb-4"></h3>
+                        </div>
+
+                        <div class="col-lg-8 col-12 mt-3 mx-auto">
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                   
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Click to change</h5>
+
+                                            
+                                          
+                                          <p id="demo2" class="mb-0">Hi</p>
+                                          <button onclick="myFunction()" class="btn custom-btn mt-3 mt-lg-4">Click me</button>
+
+                                            <!-- <p class="mb-0">Topic Listing includes home, listing, detail and contact pages. Feel free to modify this template for your custom websites.</p> -->
+
+                                            <!-- <a href="topics-detail.html" class="btn custom-btn mt-3 mt-lg-4">Learn More</a> -->
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <!-- <img src="images/topics/undraw_online_ad_re_ol62.png" class="custom-block-image img-fluid" alt=""> -->
+
+                                    
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Random Cat Image</h5>
+
+                                            <p id="cat"></p>
+                                    <img id="cat" width="420" height="660" src="" alt="Random Dog" style="display:none; border-radius: 20px;">
+
+                                    <button onclick="cat()" class="btn custom-btn mt-3 mt-lg-4">Get Random Cat</button>
+                                            
+
+                                        
+                                        </div>
+
+                
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <!-- <img src="images/topics/undraw_Podcast_audience_re_4i5q.png" class="custom-block-image img-fluid" alt=""> -->
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Podcast</h5>
+
+                                            <form id="stripe-login" method="post" name="myForm">
+
+
+                                            <div class="field padding-bottom--24">
+                                                <label for="name">ชื่อ สกุล</label>
+                                                <input type="name" name="name" placeholder="ชื่อ สกุล" required>
+                                              </div>
+                              
+                                              <div class="field padding-bottom--24">
+                                                  <label for="line">ไลน์ไอดี</label>
+                                                  <input type="text" id="line" name="line" placeholder="line id" required>
+                                                </div>
+                              
+                                              <div class="field padding-bottom--24">
+                                                <label for="email">อีเมล</label>
+                                                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                                              </div>
+                                              
+                                              <div class="field padding-bottom--24">
+                                                <input type="submit" name="submit"class="btn custom-btn mt-3 mt-lg-4" value="บันทึกข้อมูล">
+                                              </div>
+                                          
+                                            </form>
+                                          </div>
+                                        </div>
+
+                                            
+
+
+
+                                            <!-- <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit animi necessitatibus</p> -->
+
+                                    
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+
+            <section class="section-padding section-bg">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <h3 class="mb-4">Trending Topics</h3>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12 mt-3 mb-4 mb-lg-0">
+                            <div class="custom-block bg-white shadow-lg">
+                                <a href="topics-detail.html">
+                                    <div class="d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Investment</h5>
+
+                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                        </div>
+
+                                        <span class="badge bg-finance rounded-pill ms-auto">30</span>
+                                    </div>
+
+                                
+
+<iframe width="100%" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQQdHjGotjFIDZ0NfRvdUibFd9WnZyGTBWnyCZs8IP9WXwbqcO-yepAGxbL1GwrXs0ZZXHSGvxb_dTa/pubchart?oid=812684166&amp;format=interactive"></iframe>
+
+
+
+                                    <!-- <img src="images/topics/undraw_Finance_re_gnv2.png" class="custom-block-image img-fluid" alt=""> -->
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-6 col-md-6 col-12 mt-3 mb-4 mb-lg-0">
+                            <div class="custom-block bg-white shadow-lg">
+                                <a href="topics-detail.html">
+                                    <div class="d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Investment</h5>
+
+                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                        </div>
+
+                                        <span class="badge bg-finance rounded-pill ms-auto">30</span>
+                                    </div>
+
+                                    <iframe  width="100%" height="400" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRLm_7hzqik5EeVobNenvSMkXtDRhKyYJO9Jtnsp_tceAKLoQ31znDqzy57Egdzvs2dSE9szOOxSPRu/pubhtml?widget=true&amp;headers=false"></iframe>
+                                    
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-lg-6 col-md-6 col-12 mt-lg-3">
+                            <div class="custom-block custom-block-overlay">
+                                <div class="d-flex flex-column h-100">
+                                    <img src="images/businesswoman-using-tablet-analysis.jpg" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-overlay-text d-flex">
+                                        <div>
+                                            <h5 class="text-white mb-2">Finance</h5>
+
+                                            <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint animi necessitatibus aperiam repudiandae nam omnis</p>
+
+                                            <a href="topics-detail.html" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
+                                        </div>
+
+                                        <span class="badge bg-finance rounded-pill ms-auto">25</span>
+                                    </div>
+
+                                    <div class="social-share d-flex">
+                                        <p class="text-white me-4">Share:</p>
+
+                                        <ul class="social-icon">
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-twitter"></a>
+                                            </li>
+
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-facebook"></a>
+                                            </li>
+
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-pinterest"></a>
+                                            </li>
+                                        </ul>
+
+                                        <a href="#" class="custom-icon bi-bookmark ms-auto"></a>
+                                    </div>
+
+                                    <div class="section-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section> -->
+        </main>
+
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 text-center">
+                        <h3 class="mb-4">Coinbase API Demo</h3>
+                    </div>
+
+                    <div class="col-lg-8 col-12 mt-3 mx-auto">
+                        <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                            <div class="d-flex">
+                               
+
+                                <div class="custom-block-topics-listing-info d-flex">
+                                    <div>
+                                        <h5 id="lastUpdateTime" class="mb-2"></h5>
+
+                                        
+                                      
+                                      <p id="prices" class="mb-0"></p>
+                                      
+
+                                        <!-- <p class="mb-0">Topic Listing includes home, listing, detail and contact pages. Feel free to modify this template for your custom websites.</p> -->
+
+                                        <!-- <a href="topics-detail.html" class="btn custom-btn mt-3 mt-lg-4">Learn More</a> -->
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        <script>
+            //document.getElementById("demo").innerHTML = "Hello World";
+            function myFunction() {
+              fetch("https://catfact.ninja/fact")
+                .then(function(response){
+                  return response.json()
+                })
+                .then(function(data){
+                  let txt = "";
+                    for (let x in data) {
+                      txt += data[x] + " ";
+                    document.getElementById("demo2").innerHTML = txt;
+                    };
+                
+                  return data;
+                })  
+                
+           
+          }
+          </script>
+
+          
+ 
+<script>
+    function cat() {
+      fetch("https://api.thecatapi.com/v1/images/search")
+        .then(function (response) {
+          return response.json()
+        })
+        .then(function (data) {
+          document.getElementById("cat").innerHTML = `<img src="${data[0].url}" alt="Random Cat Image" style ="max-width: 300px; max-height: 300px; border-radius: 20px;">`;
+        })
+    }
+  </script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwD83G-CT8H8DtQO8VuyVxHOB_gvKsmYDdKNMBeK4wXDplA_ckXW0ggMSz0yucAtpmk/exec' 
+    const form = document.forms['myForm']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: 'บันทึกข้อมูลเรียบร้อย',
+  showConfirmButton: false,
+  timer: 1500
+}))
+        .catch(error => console.error('Error!', error.message))
+        .catch.contact-form.reset();
+    })
+  </script>
+
+
+<script>
+    function fetchPrices() {
+        var now = new Date();
+        var currentTime = now.toLocaleTimeString();
+  
+        fetch('https://api.coinbase.com/v2/exchange-rates?currency=USDT')
+            .then(response => response.json())
+            .then(data => {
+                displayPrices(data);
+                displayLastUpdateTime(currentTime);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+                alert('Error fetching data. Please try again.');
+            });
+    }
+    function displayPrices(data) {
+        var pricesDiv = document.getElementById('prices');
+        var rates = data.data.rates;
+  
+        var currencies = ['1INCH', 'AAVE', 'ABT', 'ACH', 'ACS', 'ADA', 'AED', 'BTC', 'ETH'];
+        var pricesHtml = '<p>1 USDT can buy</p><ul>';
+  
+        currencies.forEach(currency => {
+            if (rates[currency]) {
+                pricesHtml += `<li>${currency}: ${rates[currency]}</li>`;
+            } else {
+                pricesHtml += `<li>${currency}: N/A</li>`;
+            }
+        });
+  
+        pricesHtml += '</ul>';
+        pricesDiv.innerHTML = pricesHtml;
+    }
+  
+    function displayLastUpdateTime(currentTime) {
+        var updateTimeDiv = document.getElementById('lastUpdateTime');
+        updateTimeDiv.innerHTML = `<p>Last Update Time: ${currentTime}</p>`;
+    }
+  
+    fetchPrices();
+  
+    setInterval(fetchPrices, 3000);
+  </script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+<script src="js copy/jquery-3.4.1.js"></script>
+<script src="js copy/bootstrap.bundle.js"></script>
+
+<!-- bootstrap 3 affix -->
+<script src="js copy/bootstrap.affix.js"></script>
+
+<!-- Meyawo js -->
+<script src="js copy/meyawo.js"></script>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>

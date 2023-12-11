@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    p{
+        font-size: 15px;
+        text-align: center;
+        
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{font-family: 'Kanit', sans-serif;}
+
+
+</style>
+<body>
+    <div>
+  
+        <canvas id="myChart" width="200" height="100"></canvas>
+        <br>
+        <canvas id="line-chart" width="200" height="100"></canvas>
+<p>World population per region (in millions)</p>
+        
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+      <script>
+
+    const ctx = document.getElementById('myChart');
+      
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+
+
+  fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    // Use the data to create the chart
+    new Chart(document.getElementById("line-chart"), data.chartConfig);
+  })
+  .catch(error => console.error('Error fetching chart data:', error));
+
+
+
+
+      </script>
+      
+</body>
+</html>

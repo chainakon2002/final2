@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Javascript</title>
+
+        <link rel="stylesheet" href="">
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+        <link rel="stylesheet" href="style3.css">
+        <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<!--
+
+TemplateMo 590 topic listing
+
+https://templatemo.com/tm-590-topic-listing
+
+-->
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{font-family: 'Kanit', sans-serif;}
+
+.textSi
+{
+    font-size: 20px;
+}
+.cen{
+    text-align: center;
+    margin: auto;
+}
+    </style>
+    
+    <body class="topics-listing-page" id="top">
+         <!-- Page Navbar -->
+
+        <main>
+
+            
+
+
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-5 col-12">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">Java</li>
+                                </ol>
+                            </nav>
+
+                            <h2 class="text-white">JavaScript</h2>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h3 class="mb-4">JavaScript</h3>
+                        </div>
+
+                        <div class="col-lg-8 col-12 mt-3 mx-auto">
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <img src="images/topics/undraw_Remote_design_team_re_urdx.png" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">สุ่มเลข</h5>
+                                           
+                                           
+                                            <div id="result"></div>
+                                           
+                                            <button onclick="rollDice()" class="btn custom-btn mt-3 mt-lg-4">สุ่มเลย!</button>
+
+                                            <!-- <a href="topics-detail.html" class="btn custom-btn mt-3 mt-lg-4">Learn More</a> -->
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <!-- <img src="images/topics/undraw_online_ad_re_ol62.png" class="custom-block-image img-fluid" alt=""> -->
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">เวลาปัจจุบัน</h5>
+
+                                            <div class="textSi" id="time"></div>
+
+                                            <a href="/countdown-flip-timer-main/index.html" class="btn custom-btn mt-3 mt-lg-4">เคาท์ดาวน์</a>
+                                        </div>
+
+                                        <!-- <span class="badge bg-advertising rounded-pill ms-auto">30</span> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-block2 custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="custom-block-topics-listing-info d-flex">
+                                    <div class="cen">
+                                        <h5 class="mb-2">ลูกเต๋า</h5>
+
+                                        <div class="container">
+                                            <div class="dice-wrapper">
+                                                <img  id="die-1">
+                                                <img  id="die-2">
+                                            </div>
+                                            <p id="total"></p>
+                                            <button  onclick="roll()"  class="btn custom-btn mt-3 mt-lg-4" >ROLL THE DICE</button>
+                                            
+                                        </div>
+                                
+
+                                        <!-- <span class="badge bg-music rounded-pill ms-auto">20</span> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- <div class="col-lg-12 col-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center mb-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">Prev</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div> -->
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-padding section-bg">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <h3 class="mb-4">Chart</h3>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12 mt-3 mb-4 mb-lg-0">
+                            <div class="custom-block bg-white shadow-lg">
+                                
+                                    <div class="d-flex">
+                                        <div>
+                                            <h5 class="mb-2">ประชากร</h5>
+
+                                            <p class="mb-0">World population per region (in millions)</p>
+                                        </div>
+
+                                        
+                                    </div>
+
+                                    <canvas id="line-chart" width="200" height="100"></canvas>
+
+                                    <!-- <img src="images/topics/undraw_Finance_re_gnv2.png" class="custom-block-image img-fluid" alt=""> -->
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12 mt-lg-3">
+                            <div class="custom-block custom-block-overlay">
+                                <div class="d-flex flex-column h-100">
+                                    <canvas id="myChart" width="200" height="100"></canvas>
+                                    
+
+                                    <div class="custom-block-overlay-text d-flex">
+                                        <div>
+                                            <h5 class="text-white mb-2">Color</h5>
+
+                                            
+
+                                            <a href="Chart.html" class="btn custom-btn mt-2 mt-lg-3">ดูทั้งหมด</a>
+                                        </div>
+
+                                        <span class="badge bg-finance rounded-pill ms-auto">2</span>
+                                    </div>
+
+
+                                    <div class="section-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+		
+
+
+                    
+
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function rollDice() {
+        
+              var randomNumber = Math.floor(Math.random() * 6) + 1;
+          
+              document.getElementById('result').innerText = ' ' + randomNumber;
+            }
+          </script>
+
+<script>
+    function showClockRealTime() {
+        var d = new Date();
+        document.getElementById("time").innerHTML = "เวลาปัจจุบัน คือ "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+    }
+    setInterval("showClockRealTime()", 1000);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  
+<script>
+
+const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+
+fetch('data.json')
+.then(response => response.json())
+.then(data => {
+// Use the data to create the chart
+new Chart(document.getElementById("line-chart"), data.chartConfig);
+})
+.catch(error => console.error('Error fetching chart data:', error));
+
+
+</script>
+
+        <!-- JAVASCRIPT FILES -->
+
+        <script src="js copy/jquery-3.4.1.js"></script>
+        <script src="js copy/bootstrap.bundle.js"></script>
+        
+        <!-- bootstrap 3 affix -->
+        <script src="js copy/bootstrap.affix.js"></script>
+        
+        <!-- Meyawo js -->
+        <script src="js copy/meyawo.js"></script>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>
